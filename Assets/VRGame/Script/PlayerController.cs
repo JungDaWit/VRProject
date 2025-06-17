@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     public float jumpPower = 5f;
     private bool IsFloor;
 
+   
+
     public List<GameObject> PlayerHp;
      
     private float xRotation = 0f;
@@ -41,11 +43,14 @@ public class PlayerController : MonoBehaviour
         RotateView(); 
         MovePlayer();
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsFloor || Input.GetKeyDown("joystick button 0"))
+        
+
+        if (Input.GetKeyDown(KeyCode.Space) && IsFloor || Input.GetAxis("TriggerRight") > 0.5f && IsFloor)
         {
+            Debug.Log("점프 버튼");
             Jump();
         }
-
+        
     }
 
     void RotateView()
