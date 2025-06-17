@@ -165,6 +165,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.DefaultCompany.personalproject
     Standalone: com.DefaultCompany.personal-project
+    iPhone: com.DefaultCompany.personal-project
   buildNumber:
     Standalone: 0
     VisionOS: 0

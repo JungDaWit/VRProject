@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
         RotateView(); 
         MovePlayer();
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsFloor)
+        if (Input.GetKeyDown(KeyCode.Space) && IsFloor || Input.GetKeyDown("joystick button 0"))
         {
             Jump();
         }
