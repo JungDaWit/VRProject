@@ -89,6 +89,16 @@ public class GameManager : MonoBehaviour
         {
             Map.SetActive(false);
         }
+
+        float Trigger = Input.GetAxis("TriggerLeft");
+        if (Trigger > 0.5f)
+        {
+            Map.SetActive(true);
+        }
+        else
+        {
+            Map.SetActive(false);
+        }
     }
     private void setting()
     {
